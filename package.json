@@ -1,0 +1,31 @@
+{
+  "name": "flowtype-webpack-plugin",
+  "version": "0.0.1",
+  "description": "Check flow types in your Webpack builds!",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"TODO\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodyReichert/flowtype-webpack-plugin.git"
+  },
+  "keywords": [
+    "flow",
+    "webpack",
+    "flowtype",
+    "webpack",
+    "plugin",
+    "flow",
+    "webpack"
+  ],
+  "author": "Cody Reichert <codyreichert@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CodyReichert/flowtype-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/CodyReichert/flowtype-webpack-plugin#readme"
+}
