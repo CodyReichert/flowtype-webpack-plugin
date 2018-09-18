@@ -12,8 +12,9 @@ FlowtypeWebpackPlugin.prototype.apply = function(compiler) {
     var plugin = this
 
     compiler.hooks.emit.tap("FlowtypeWebpackPlugin", function(compilation) {
-        const status = JSON.parse(flowStatus())
-        if (!status.passed) {
+        const status_ = flowStatus()
+        const status = status_ ? JSON.parse(status_) : null
+        if (status && !status.passed) {
             status.errors.map(e => compilation.errors.push(flowResult(e)))
         }
     })
