@@ -1,7 +1,7 @@
 # flowtype-webpack-plugin
 > Check flow types in your Webpack builds!
 
-**Required Webpack v4**
+**Requires Webpack v4**
 
 This plugin runs `flow status` on your project's code before emitting
 the compiled bundles.
@@ -23,6 +23,13 @@ const FlowtypeWebpackPlugin = require('flowtype-webpack-plugin')
         new FlowtypeWebpackPlugin()
     ]
 }
+```
+
+### Plugin options
+
+**`forceFail`**
+```js
+new FlowtypeWebpackPlugin({ forceFail: true })
 ```
 
 ## License

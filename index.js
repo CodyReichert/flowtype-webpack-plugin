@@ -16,6 +16,11 @@ FlowtypeWebpackPlugin.prototype.apply = function(compiler) {
         const status = status_ ? JSON.parse(status_) : null
         if (status && !status.passed) {
             status.errors.map(e => compilation.errors.push(flowResult(e)))
+
+            if (plugin._options.forceFail) {
+                status.errors.map(e => console.error(flowResult(e)))
+                process.exit(1)
+            }
         }
     })
 }
