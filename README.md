@@ -27,7 +27,14 @@ const FlowtypeWebpackPlugin = require('flowtype-webpack-plugin')
 
 ### Plugin options
 
-**`forceFail`**
+#### `warning`: _boolean_
+> Throw warnings instead of errors.
+```js
+new FlowtypeWebpackPlugin({ warning: true })
+```
+
+#### `forceFail`: _boolean_
+> Immediately kill the compilation process.
 ```js
 new FlowtypeWebpackPlugin({ forceFail: true })
 ```

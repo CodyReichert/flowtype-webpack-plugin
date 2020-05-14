@@ -1,6 +1,6 @@
 {
   "name": "flowtype-webpack-plugin",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Check flow types in your Webpack builds!",
   "main": "index.js",
   "directories": {
